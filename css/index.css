@@ -15,6 +15,7 @@ nav {
 }
 nav .navbar-nav {
   margin: 0 auto 0 auto;
+  width: 100%;
 }
 nav a {
   margin-right: 5em;
