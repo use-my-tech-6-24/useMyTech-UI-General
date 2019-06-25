@@ -21,7 +21,6 @@ nav a {
 }
 .carousel {
   width: 100%;
-  height: 70vh;
   align-content: center;
   z-index: 1;
   position: absolute;
@@ -58,6 +57,21 @@ nav a {
 }
 .carousel #arrow {
   margin-top: 2em;
+}
+.mainSection {
+  padding: 3em 3em 1em 3em;
+  margin: 0 auto 0 auto;
+  font-size: 2em;
+}
+.mainSection h2 {
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+.mainSection p {
+  margin-bottom: 3em;
+}
+.gridContainer .row1 {
+  margin-bottom: 1.5em;
 }
 html,
 body {
