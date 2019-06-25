@@ -56,9 +56,9 @@ nav a {
   border: 2px solid #499ba8;
 }
 .carousel #arrow {
-  margin-top: 2em;
+  margin-top: 2.8em;
 }
-@media (max-width: 700px) {
+@media (max-width: 770px) {
   .carousel #hero-text {
     margin-top: -9em;
     padding: 0.5em 0 0.5em 0;
@@ -73,15 +73,12 @@ nav a {
   .carousel #hero-text button {
     margin-top: 0.2em;
   }
-  #arrow {
+  .carousel #arrow {
     margin-top: 3em;
     width: 30px;
   }
 }
 @media (max-width: 450px) {
-  .carousel {
-    height: 120px;
-  }
   .carousel #hero-text {
     margin-top: -7.5em;
     padding: 0.3em 0 0.3em 0;
@@ -112,13 +109,19 @@ nav a {
 .mainSection p {
   margin-bottom: 3em;
 }
-@media (max-width: 700px) {
+.mainSection .gridContainer .row1 {
+  margin-bottom: 1.5em;
+}
+@media (max-width: 770px) {
   .mainSection {
     font-size: 1.5em;
   }
-}
-.gridContainer .row1 {
-  margin-bottom: 1.5em;
+  .gridContainer .row1 img {
+    padding: 1em;
+  }
+  .gridContainer .row2 img {
+    padding: 1em;
+  }
 }
 footer {
   border-top: 1px solid #000;
