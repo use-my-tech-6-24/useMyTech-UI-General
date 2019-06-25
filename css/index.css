@@ -8,7 +8,7 @@
 /* Below this line is where you will start your work */
 /* It is important to note, you will not be writing any CSS in this file*/
 nav {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
   font-size: 1.5em;
   display: flex;
@@ -38,7 +38,6 @@ nav a {
   margin-top: -13em;
   text-align: center;
   font-size: 2em;
-  height: 30%;
   position: relative;
   z-index: 999;
   display: block;
@@ -59,8 +58,50 @@ nav a {
 .carousel #arrow {
   margin-top: 2em;
 }
+@media (max-width: 700px) {
+  .carousel #hero-text {
+    margin-top: -9em;
+    padding: 0.5em 0 0.5em 0;
+  }
+  .carousel #hero-text h1 {
+    font-size: 1.1em;
+  }
+  .carousel #hero-text h2 {
+    font-size: 0.8em;
+    margin-top: 0.5em;
+  }
+  .carousel #hero-text button {
+    margin-top: 0.2em;
+  }
+  #arrow {
+    margin-top: 3em;
+    width: 30px;
+  }
+}
+@media (max-width: 450px) {
+  .carousel {
+    height: 120px;
+  }
+  .carousel #hero-text {
+    margin-top: -7.5em;
+    padding: 0.3em 0 0.3em 0;
+  }
+  .carousel #hero-text h1 {
+    font-size: 1.1em;
+  }
+  .carousel #hero-text h2 {
+    font-size: 0.9em;
+    margin-top: 0.5em;
+  }
+  .carousel #hero-text button {
+    margin-top: 0.2em;
+  }
+  .carousel #arrow {
+    display: none;
+  }
+}
 .mainSection {
-  padding: 3em 3em 1em 3em;
+  padding: 3em 3em 3em 3em;
   margin: 0 auto 0 auto;
   font-size: 2em;
 }
@@ -71,8 +112,22 @@ nav a {
 .mainSection p {
   margin-bottom: 3em;
 }
+@media (max-width: 700px) {
+  .mainSection {
+    font-size: 1.5em;
+  }
+}
 .gridContainer .row1 {
   margin-bottom: 1.5em;
+}
+footer {
+  border-top: 1px solid #000;
+  font-size: 1.5em;
+  padding: 0.5em 0 0.5em 0;
+  background-color: #A3EEE6;
+}
+footer .socialIcons {
+  margin-bottom: 0.5em;
 }
 html,
 body {
