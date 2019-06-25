@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -13,9 +14,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="mainContainer">
         <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
                 <a class="navbar-brand" href=""><img src="images/usemytech.PNG"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,10 +39,9 @@
                 </div>
 
             </nav>
+            
             <div class="carousel">
-                <div class="hero-image">
-                    <img src="" alt="">
-                </div>
+                    <img src="images/carousel-1.jpeg" id="carousel1" alt="">
                 <div class="hero-text">
                     <h1>Use My Tech Stuff</h1>
                     <h2>Professional Equipment for Everyone</h2>
@@ -49,41 +49,49 @@
                     <img src="" alt="arrow down">
                 </div>
         </header>
-        <h2>Lorem ipsum dolor sit.
-        </h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit voluptas voluptatem nam numquam?
-            Magni facilis, consequuntur, eligendi tempore amet illum unde sit quia, laborum suscipit voluptates? Fuga,
-            accusamus incidunt itaque quasi voluptate officia non placeat maiores, ducimus laboriosam blanditiis sequi
-            tenetur accusantium dolore. Corporis, sed? Facilis placeat asperiores nulla dolore sit commodi, minus, ad
-            distinctio, omnis deleniti provident.</p>
 
-        <div class="container">
+        <section class="mainSection">
+            <h2>Lorem ipsum dolor sit.
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus eos, suscipit ipsum assumenda omnis
+                quae minus voluptatem culpa qui, animi vero molestiae? Adipisci vel accusantium quos modi amet quas
+                dolores ipsum culpa. Quasi pariatur commodi distinctio quo aliquam sequi unde?</p>
 
-            <div class="row row1">
-                <img src="UMTS_Assets/joseph-chan-5.jpg" class="col-md-4">
-                <img src="UMTS_Assets/joseph-chan-1.jpg" class="col-md-4">
-                <img src="UMTS_Assets/joseph-chan-3.jpg" class="col-md-4">
+            <div class="container">
+
+                <div class="row row1">
+                    <img src="images/cameras-grid-img.png" class="col-md-4">
+                    <img src="images/monitors-grid-img.png" class="col-md-4">
+                    <img src="images/lights-grid-img.png" class="col-md-4">
+                </div>
+                <div class="row row2">
+                    <img src="images/cdj-grid-img.png" class="col-md-4">
+                    <img src="images/videoCameras-grid-img.png" class="col-md-4">
+                    <img src="images/events-grid-img.png" class="col-md-4">
+                </div>
+
             </div>
-            <div class="row row2">
-                <img src="UMTS_Assets/joseph-chan-6.jpg" class="col-md-4">
-                <img src="UMTS_Assets/joseph-chan-9.jpg" class="col-md-4">
-                <img src="UMTS_Assets/joseph-chan-4.jpg" class="col-md-4">
+
+        </section>
+
+
+
+
+
+        <!-- footer section -->
+
+        <footer>
+            <h3>Connect With Us On Social Media</h3>
+            <div class="socialIcons">
+                <img src="images/fb-icon.png">
+                <img src="images/ig-icon.png">
+                <img src="images/twitter-icon.png">
             </div>
-
-        </div>
-
-
-
+            <p>&copy;Use My Tech</p>
+        </footer>
 
     </div>
 
-    <footer>
-        <h3>Connect With Us On Social Media</h3>
-        <img src"#">
-        <img src"#">
-        <img src"#">
-        <p>&copy;Use My Tech</p>
-    </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

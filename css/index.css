@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+/* Below this line is where you will start your work */
+/* It is important to note, you will not be writing any CSS in this file*/
+nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100vw;
+  font-size: 1.5em;
+  display: flex;
+}
+nav .navbar-nav {
+  margin: 0 auto 0 auto;
+}
+nav a {
+  margin-right: 5em;
+}
+html,
+body {
+  width: auto;
+  font-size: 62.5%;
+  font-family: 'Ubuntu';
+  background-color: #fffef7;
+}
+.mainContainer {
+  align-content: center;
+  text-align: center;
+}
