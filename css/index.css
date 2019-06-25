@@ -8,7 +8,7 @@
 /* Below this line is where you will start your work */
 /* It is important to note, you will not be writing any CSS in this file*/
 nav {
-  background-color: #97c5ee;
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
   font-size: 1.5em;
   display: flex;
@@ -21,8 +21,12 @@ nav a {
 }
 html,
 body {
-  width: 100vw;
+  width: auto;
   font-size: 62.5%;
   font-family: 'Ubuntu';
   background-color: #fffef7;
+}
+.mainContainer {
+  align-content: center;
+  text-align: center;
 }
