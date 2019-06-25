@@ -1,46 +1,101 @@
  .carousel {
-    width: 100%;
-    align-content: center;
-    z-index: 1;
-    position: absolute;
+     width        : 100%;
+     align-content: center;
+     z-index      : 1;
+     position     : absolute;
 
-    #carousel1 {
-        width     : 100%;
-        object-fit: contain;
-        z-index: -1;
-        position: relative;
-    }
+     #carousel1 {
+         width     : 100%;
+         object-fit: contain;
+         z-index   : -1;
+         position  : relative;
+     }
 
-    #hero-text {
-        background-color: rgba(0,0,0,0.4);
-        color: #fff;
-        margin-top: -13em;
-        text-align: center;
-        font-size: 2em;
-        height: 30%;
-        position: relative;
-        z-index: 999;
-        display: block;
-        padding: 1em 0 1em 0;
+     #hero-text {
+         background-color: rgba(0, 0, 0, 0.4);
+         color           : #fff;
+         margin-top      : -13em;
+         text-align      : center;
+         font-size       : 2em;
+         position        : relative;
+         z-index         : 999;
+         display         : block;
+         padding         : 1em 0 1em 0;
 
-        h1 {
-            font-size: 1.7em;
-        }
+         h1 {
+             font-size: 1.7em;
+         }
 
-        h2 {
-            margin-top: 1em;
-        }
+         h2 {
+             margin-top: 1em;
+         }
 
-        button {
-            margin-top: 1em;
-            background-color: rgba(0,0,0,0.0);
-            color: #fff;
-            border: 2px solid #499ba8;
+         button {
+             margin-top      : 1em;
+             background-color: rgba(0, 0, 0, 0.0);
+             color           : #fff;
+             border          : 2px solid #499ba8;
+         }
+     }
+
+     #arrow {
+         margin-top: 2em;
+     }
+ }
+
+ @media @tablet {
+    .carousel {
+
+        #hero-text {
+            margin-top: -9em;
+            padding   : 0.5em 0 0.5em 0;
+
+            h1 {
+                font-size: 1.1em;
+            }
+
+            h2 {
+                font-size : 0.8em;
+                margin-top: 0.5em;
+            }
+
+            button {
+                margin-top: 0.2em;
+            }
         }
     }
 
     #arrow {
-        margin-top: 2em;
+        margin-top: 3em;
+        width: 30px;
     }
-
 }
+
+ @media @phone {
+     .carousel {
+         height: 120px;
+
+         #hero-text {
+             margin-top: -7.5em;
+             padding   : 0.3em 0 0.3em 0;
+
+             h1 {
+                 font-size: 1.1em;
+             }
+
+             h2 {
+                 font-size : 0.9em;
+                 margin-top: 0.5em;
+             }
+
+             button {
+                 margin-top: 0.2em;
+             }
+         }
+
+         #arrow {
+            display: none;
+        }
+     }
+ }
+
