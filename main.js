@@ -53,3 +53,21 @@ function mouseOver3() {
 function mouseOut3() {
   document.getElementById("nav-link3").style.color = "black";
 }
+
+
+
+
+
+
+
+// %%%%%%%%%%%%%%%%%%%%%%%%%  NAVBAR-BRAND  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+let var7= document.getElementById("navbar-brand").onmouseover = function() {mouseOver4()};
+let var8= document.getElementById("navbar-brand").onmouseout = function() {mouseOut4()};
+
+function mouseOver4() {
+  document.getElementById("navbar-brand").style.color = "gray";
+}
+function mouseOut4() {
+  document.getElementById("navbar-brand").style.color = "black";
+}
+
