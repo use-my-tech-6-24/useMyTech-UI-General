@@ -185,13 +185,44 @@ nav a {
   }
 }
 footer {
-  border-top: 1px solid #000;
+  border-top: 4px solid #C015E9;
   font-size: 1.5em;
-  padding: 0.5em 0 0.5em 0;
-  background-color: #A3EEE6;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #404040;
+  color: white;
 }
-footer .socialIcons {
+footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footer-container .contact p {
+  margin: 0;
+}
+footer .footer-container .contact a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-container .socialIcons {
   margin-bottom: 0.5em;
+}
+.hero {
+  width: 100vw;
+  align-content: center;
+  margin: 7em auto 0 auto;
+  background-image: url("../images/about-hero.jpg");
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-size: cover;
+}
+.hero #hero-text {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: black;
+  text-align: center;
+  font-size: 2em;
+  display: block;
+  padding: 1em 5em 1em 5em;
+  transform: translate(0%, 60%);
 }
 .main-section {
   padding: 3em 3em 3em 3em;
@@ -283,9 +314,6 @@ footer .socialIcons {
 }
 .main-section .contact p {
   margin-bottom: 0;
-}
-footer {
-  text-align: center;
 }
 html,
 body {
