@@ -445,6 +445,10 @@ footer .footer-container .socialIcons {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.main-section .bottom-section .profiles-container .profile .profile-info p {
+  font-weight: 700;
+  margin-bottom: -0.2em;
+}
 .main-section .contact .about-header {
   padding-bottom: 0.5em;
 }
