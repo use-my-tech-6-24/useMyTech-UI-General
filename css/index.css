@@ -255,16 +255,17 @@ footer .socialIcons {
 .main-section .bottom-section .profiles-container {
   display: flex;
   flex-flow: row wrap;
+  justify-content: flex-start;
   margin: 2em auto 3em auto;
 }
 .main-section .bottom-section .profiles-container .profile {
-  max-width: 30%;
-}
-.main-section .bottom-section .profiles-container .profile .img-container {
-  border: 1px dashed red;
+  width: 31%;
+  height: auto;
+  padding: 5px;
+  margin: 5px;
 }
 .main-section .bottom-section .profiles-container .profile .img-container .profile-img {
-  width: 10em;
+  width: 100%;
 }
 .main-section .contact .about-header {
   padding-bottom: 0.5em;
