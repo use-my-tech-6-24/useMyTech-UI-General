@@ -1,0 +1,77 @@
+// Main Ubuntu Font 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
+/* Below this line is where you will start your work */
+/* It is important to note, you will not be writing any CSS in this file*/
+ @import '../less/navBar.less';
+
+html, body {
+  width: 100vw;
+  font-size: 62.5%;
+  font-family: 'Ubuntu';
+  background-color: #fffef7;
+}
+// ==========================================================
+
+
+
+.container  {
+  position: relative;
+  width: 50%;
+}
+
+.one .two{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+// ============  HOVER  ===========
+.one:hover {
+  opacity: 0.3;
+}
+
+.two:hover {
+  opacity: 0.3;
+}
+
+.three:hover {
+  opacity: 0.3;
+}
+
+.four:hover {
+  opacity: 0.3;
+}
+
+.five:hover {
+  opacity: 0.3;
+}
+
+.six:hover {
+  opacity: 0.3;
+}
+// ==========================
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}

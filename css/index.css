@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Ubuntu Regular'), local('Ubuntu-Regular'), url(https://fonts.gstatic.com/s/ubuntu/v13/4iCs6KVjbNBYlgoKfw7z.ttf) format('truetype');
+}
+/* Below this line is where you will start your work */
+/* It is important to note, you will not be writing any CSS in this file*/
+nav {
+  background-color: #97c5ee;
+  width: 100vw;
+  font-size: 1.5em;
+  display: flex;
+}
+nav .navbar-nav {
+  margin: 0 auto 0 auto;
+}
+nav a {
+  margin-right: 5em;
+}
+html,
+body {
+  width: 100vw;
+  font-size: 62.5%;
+  font-family: 'Ubuntu';
+  background-color: #fffef7;
+}
+.container {
+  position: relative;
+  width: 50%;
+}
+.one .two {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.one:hover {
+  opacity: 0.3;
+}
+.two:hover {
+  opacity: 0.3;
+}
+.three:hover {
+  opacity: 0.3;
+}
+.four:hover {
+  opacity: 0.3;
+}
+.five:hover {
+  opacity: 0.3;
+}
+.six:hover {
+  opacity: 0.3;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
