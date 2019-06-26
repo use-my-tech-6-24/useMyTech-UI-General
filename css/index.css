@@ -132,9 +132,50 @@ footer {
 footer .socialIcons {
   margin-bottom: 0.5em;
 }
+.hero {
+  width: 100vw;
+  align-content: center;
+  margin: 0 auto 0 auto;
+  background-image: url("../images/about-hero.jpg");
+  background-repeat: no-repeat;
+  height: 70vh;
+  background-size: cover;
+}
+.hero #hero-text {
+  background-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  display: block;
+  padding: 1em 5em 1em 5em;
+}
+.main-section {
+  padding: 3em 3em 3em 3em;
+  margin: 0 auto 0 auto;
+  font-size: 2em;
+}
+.main-section .top-section {
+  display: flex;
+  flex-direction: row;
+}
+.main-section .top-section flex .about-item {
+  width: 50%;
+}
+.main-section .bottom-section .profiles-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+.main-section .bottom-section .profiles-container .profile {
+  max-width: 30%;
+}
+.main-section .bottom-section .profiles-container .profile .img-container {
+  border: 1px dashed red;
+}
+.main-section .bottom-section .profiles-container .profile .img-container .profile-img {
+  width: 10em;
+}
 html,
 body {
-  padding-top: 3.5em;
   width: auto;
   font-size: 62.5%;
   font-family: 'Ubuntu';
