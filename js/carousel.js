@@ -10,20 +10,20 @@ function reset() {
   }
 }
 
-// Init slider
+// Initialize slider
 function startSlide() {
   reset();
   sliderImages[0].style.display = "block";
 }
 
-// Show prev
+// Shows prev
 function slideLeft() {
   reset();
   sliderImages[current - 1].style.display = "block";
   current--;
 }
 
-// Show next
+// Shows next
 function slideRight() {
   reset();
   sliderImages[current + 1].style.display = "block";
