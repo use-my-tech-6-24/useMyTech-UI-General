@@ -1,0 +1,119 @@
+//About page content
+
+.hero {
+    width: 100vw;
+    align-content: center;
+    margin: 0 auto 0 auto;
+    background-image: url("../images/about-hero.jpg");
+    background-repeat: no-repeat;
+    height: 70vh;
+    background-size: cover;
+
+    #hero-text {
+        background-color: rgba(255, 255, 255, 0.4);
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        display: block;
+        padding: 1em 5em 1em 5em;
+        align-content: center;
+    }
+}
+
+.main-section {
+    padding: 3em 3em 3em 3em;
+    margin: 0 auto 0 auto;
+    font-size: 1.5em;
+
+    .top-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        .about-item {
+            width: 47%;
+
+            .about-header {
+                padding-bottom: 0.5em;
+                margin-bottom: 0.5em;
+                border-bottom: 3px solid #C015E9;
+
+            }
+             
+
+            
+            
+            
+        }
+    }
+
+    .bottom-section {
+        margin: 2em auto auto auto;
+
+        .about-header {
+            text-align: center;
+            border-bottom: 3px solid #C015E9;
+        }
+
+        .tabs {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+            div {
+                margin: 0 5px;
+                padding: 2px 10px;
+                font-size: 12px;
+                letter-spacing: 2px;
+                cursor: pointer;
+                font-weight: bold;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+            
+
+        }
+
+        .profiles-container {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            margin: 2em auto 3em auto;
+
+            .profile {
+                width: 31%;
+                height: auto;
+                padding: 5px;
+                margin: 5px;
+                //border: 1px dashed blue;
+
+                .img-container {
+
+                    .profile-img {
+                        width: 100%;
+                    }
+                }
+                
+            }
+        }
+    }
+
+    .contact {
+
+        .about-header {
+            padding-bottom: 0.5em;
+
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+footer {
+    text-align: center;
+}
+

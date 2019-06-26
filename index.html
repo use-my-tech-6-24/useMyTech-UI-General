@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -19,7 +20,7 @@
 
     <div class="mainContainer">
         <header class="header">
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-md navbar-light fixed-top">
                 <a class="navbar-brand" href=""><img src="images/usemytech.PNG"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,45 +29,110 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">About Our Team<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="about.html">About<span class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://ls-umts.netlify.com/">Login<span
+                                    class="sr-only"></span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="https://ls-umts.netlify.com/">Sign Up<span
+                                    class="sr-only"></span></a>
                         </li>
                     </ul>
                 </div>
-
             </nav>
+
             <div class="carousel">
-                <div class="hero-image">
-                    <img src="" alt="">
-                </div>
-                <div class="hero-text">
-                    <h1>Use My Tech Stuff</h1>
-                    <h2>Professional Equipment for Everyone</h2>
-                    <button>Join Now!</button>
-                    <img src="" alt="arrow down">
-                </div>
-                <h2>Lorem ipsum dolor sit.
-                </h2>
-                <p>Lorem ipsum dolor sit amet.</p>
-
-                <div class="container">
-
-                    <div class="row row1">
-                        <img src="images/cameras-grid-img.png"  class="col-md-4 one">
-                        <img src="images/monitors-grid-img.png" class="col-md-4 two">
-                        <img src="images/lights-grid-img.png" class="col-md-4 three">
+                <div id="arrow-left" class="arrow"></div>
+                <div id="slider">
+                    <div class="slide slide1">
+                        <div class="slide-content">
+                            <div id="hero-text">
+                                <h1>Skip the High Rental Rates</h1>
+                                <h2>Discover the professional equipment sharing marketplace</h2>
+                                <button type="button">Join Now!</button>
+                            </div>
+                            <a href="#scrollPoint">
+                                <img src="images/arrow-icon.png" id="carouselArrow" class="animated infinite bounce"
+                                    alt="arrow down">
+                            </a>
+                        </div>
                     </div>
-                    <div class="row row2">
-                        <img src="images/cdj-grid-img.png" class="col-md-4 four">
-                        <img src="images/videoCameras-grid-img.png" class="col-md-4 five">
-                        <img src="images/events-grid-img.png" class="col-md-4 six">
+                    <div class="slide slide2">
+                        <div class="slide-content">
+                            <div id="hero-text">
+                                <h1>Skip the High Rental Rates</h1>
+                                <h2>Discover the professional equipment sharing marketplace</h2>
+                                <button type="button">Join Now!</button>
+                            </div>
+                            <a href="#scrollPoint">
+                                <img src="images/arrow-icon.png" id="carouselArrow" class="animated infinite bounce"
+                                    alt="arrow down">
+                            </a>
+                        </div>
                     </div>
-
+                    <div class="slide slide3">
+                            <div class="slide-content">
+                                    <div id="hero-text">
+                                        <h1>Skip the High Rental Rates</h1>
+                                        <h2>Discover the professional equipment sharing marketplace</h2>
+                                        <button type="button">Join Now!</button>
+                                    </div>
+                                    <a href="#scrollPoint">
+                                        <img src="images/arrow-icon.png" id="carouselArrow" class="animated infinite bounce"
+                                            alt="arrow down">
+                                    </a>
+                                </div>
+                    </div>
                 </div>
+                <div id="arrow-right" class="arrow"></div>
+            </div>
 
-<!-- ===========================================================================================-->
-
-
+            <!-- <div class="carousel">
+                <img src="images/carousel-1.jpeg" id="carousel1" alt="">
+                <div id="hero-text">
+                    <h1>Skip the High Rental Rates</h1>
+                    <h2>Discover the professional equipment sharing marketplace</h2>
+                    <button type="button">Join Now!</button>
+                </div>
+                <a href="#scrollPoint">
+                    <img src="images/arrow-icon.png" id="arrow" class="animated infinite bounce" alt="arrow down">
+                </a>
+            </div> -->
         </header>
+
+        <section class="mainSection">
+            <h2>Rent high-end tech equipment from people like you</h2>
+            <p>Looking for a high-end camera for your upcoming vacation? Hosting a block party where the jams should be
+                heard around the neighborhood? Trying to find a laptop to use for a couple of days while yours is being
+                repaired? Use My Tech Stuff is here to help.
+                <br>
+                <br>
+                Use My Tech Stuff is a high-tech equipment sharing marketplace where community members can rent a
+                variety of gear from a community of equipment owners across the US. You’ll be able to choose from a
+                diverse selection of cameras, laptops, speakers, monitors, and more in whatever city you want. At the
+                same time, equipment sharers can earn extra money to offset the costs of owning these professional
+                tools.
+            </p>
+
+            <div class="gridContainer">
+
+                <div class="row row1" id="scrollPoint">
+                    <img src="images/cameras-grid-img.png" class="col-md-4">
+                    <img src="images/monitors-grid-img.png" class="col-md-4">
+                    <img src="images/lights-grid-img.png" class="col-md-4">
+                </div>
+                <div class="row row2">
+                    <img src="images/cdj-grid-img.png" class="col-md-4">
+                    <img src="images/videoCameras-grid-img.png" class="col-md-4">
+                    <img src="images/events-grid-img.png" class="col-md-4">
+                </div>
+
+            </div>
+
+        </section>
+
 
         <!-- footer section -->
 
@@ -83,8 +149,11 @@
     </div>
 
 
+<<<<<<< HEAD
     <script type="text/javascript" src="main.js"></script>
 
+=======
+>>>>>>> f18795418da581f21bc66898c53ff947d2b6d43c
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -95,6 +164,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+        <script src="js/carousel.js"></script>
 
 </body>
 
