@@ -302,27 +302,27 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 50);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
 .one:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .two:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .three:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .four:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .five:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .six:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 .container:hover .middle {
   opacity: 1;
