@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -16,8 +17,8 @@
 <body>
     <div class="main-container">
         <header class="header">
-            <nav class="navbar navbar-expand-md navbar-light">
-                <a class="navbar-brand" href="index.html"><img src="images/usemytech.PNG"></a>
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+                <a class="navbar-brand" href=""><img src="images/usemytech.PNG"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -37,12 +38,12 @@
                         </li>
                     </ul>
                 </div>
-
             </nav>
             <div class="hero">
                 <div id="hero-text">
                     <h1>“I captured my best photos of Mt. Everest with a camera lens that I couldn’t afford to buy. It’s
                         more bang for your buck, with the convenience of being right around the corner.” 
+                        <br>
                         <br>
                         — Anita Young, photographer</h1>
                 </div>
@@ -69,7 +70,7 @@
                 </div>
             </div>
             <div class="bottom-section">
-                <h2 class="about-header">Our Team</h2>
+                <h1>Our Team</h1>
                 <div class="tabs">
                     
                         <div>All</div>
@@ -86,7 +87,6 @@
                             <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img"/>
                             <div class="name">Cesar Rodriguez, UX Designer</div>
                             <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-
                         </div>
                     </div>
                     <div class="profile">
@@ -100,8 +100,10 @@
                     <div class="profile">
                         <div class="img-container">
                             <img src="./images/profile-photos/Cesar.jpg" alt="" class="profile-img"/>
-                            <div class="name">PJ Wise, UI Developer</div>
-                            <img class="github-icon" src="images/github-icon.svg" href="https://github.com/pj-wise" />
+                            
+                                <div class="name">PJ Wise</div>
+                                <div class="title">UI Developer</div>
+                                <a href="https://github.com/pj-wise"> <img class="github-icon" src="images/github-icon.svg"> </a>
 
                         </div>
                     </div>
@@ -149,16 +151,25 @@
 
             </div>
 
-            <div class="contact">
-                <h2 class="about-header">Contact Us</h2>
-                <p>Use My Tech Stuff</p>
-                <p>Lambda School</p>
-                <p>555-555-5555</p>
-                <a href="mailto:contact@lambdaschool.com">team@umts.com</a>
-            </div>
+            
         </div>
         <footer>
-            <p>&copy;Use My Tech</p>
+            <div class="footer-container">
+                    <div class="contact">
+                            <h3 class="about-header">Contact Us:</h3>
+                            <p>555-555-5555</p>
+                            <a href="mailto:contact@lambdaschool.com">team@umts.com</a>
+                        </div>
+                        <div class="copyright">
+                                <p>&copy;Use My Tech Stuff</p>
+                        </div>
+                        <div class="socialIcons">
+                                <img src="images/fb-icon.png">
+                                <img src="images/ig-icon.png">
+                                <img src="images/twitter-icon.png">
+                        </div>
+            </div>
+                
         </footer>
 </body>
 

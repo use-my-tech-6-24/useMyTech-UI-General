@@ -111,7 +111,7 @@ nav a {
   margin-right: 30px;
   z-index: 999;
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .carousel #hero-text {
     margin-top: 4em;
     padding: 0.5em 0 0.5em 0;
@@ -139,7 +139,7 @@ nav a {
     height: 60px;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .carousel #hero-text {
     margin-top: -7.5em;
     padding: 0.3em 0 0.3em 0;
@@ -174,8 +174,11 @@ nav a {
 .mainSection .gridContainer .row1 {
   margin-bottom: 1.5em;
 }
-@media (max-width: 770px) {
+@media (max-width: 800px) {
   .mainSection {
+    font-size: 1.5em;
+  }
+  .mainSection h2 {
     font-size: 1.5em;
   }
   .gridContainer .row1 img {
@@ -186,18 +189,31 @@ nav a {
   }
 }
 footer {
-  border-top: 1px solid #000;
+  border-top: 4px solid #C015E9;
   font-size: 1.5em;
-  padding: 0.5em 0 0.5em 0;
-  background-color: #A3EEE6;
+  padding: 0.5em 1em 0.5em 1em;
+  background-color: #404040;
+  color: white;
 }
-footer .socialIcons {
+footer .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+footer .footer-container .contact p {
+  margin: 0;
+}
+footer .footer-container .contact a {
+  color: white;
+  text-decoration: none;
+}
+footer .footer-container .socialIcons {
   margin-bottom: 0.5em;
 }
 .hero {
   width: 100vw;
   align-content: center;
-  margin: 0 auto 0 auto;
+  margin: 7em auto 0 auto;
   background-image: url("../images/about-hero.jpg");
   background-repeat: no-repeat;
   height: 70vh;
@@ -205,65 +221,94 @@ footer .socialIcons {
 }
 .hero #hero-text {
   background-color: rgba(255, 255, 255, 0.4);
-  color: white;
+  color: black;
   text-align: center;
   font-size: 2em;
   display: block;
   padding: 1em 5em 1em 5em;
-  align-content: center;
+  transform: translate(0%, 60%);
 }
 .main-section {
   padding: 3em 3em 3em 3em;
   margin: 0 auto 0 auto;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 .main-section .top-section {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-between;
 }
 .main-section .top-section .about-item {
-  width: 47%;
+  width: 46%;
+}
+@media (max-width: 800px) {
+  .main-section .top-section .about-item {
+    width: 100%;
+    padding-bottom: 1em;
+  }
+}
+@media (max-width: 500px) {
+  .main-section .top-section .about-item {
+    width: 100%;
+    padding-bottom: 1em;
+  }
 }
 .main-section .top-section .about-item .about-header {
   padding-bottom: 0.5em;
   margin-bottom: 0.5em;
-  border-bottom: 3px solid #C015E9;
+  border-bottom: 5px solid #C015E9;
 }
 .main-section .bottom-section {
   margin: 2em auto auto auto;
 }
-.main-section .bottom-section .about-header {
+.main-section .bottom-section h1 {
   text-align: center;
-  border-bottom: 3px solid #C015E9;
 }
 .main-section .bottom-section .tabs {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  border-bottom: 3px solid #C015E9;
 }
 .main-section .bottom-section .tabs div {
   margin: 0 5px;
   padding: 2px 10px;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 2px;
   cursor: pointer;
-  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .main-section .bottom-section .tabs div {
+    padding: 0;
+    letter-spacing: 1px;
+    font-size: 12px;
+  }
 }
 .main-section .bottom-section .tabs div:hover {
-  text-decoration: underline;
+  color: #C015E9;
+  font-weight: bold;
 }
 .main-section .bottom-section .profiles-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin: 2em auto 3em auto;
+  margin: 1em auto 3em auto;
 }
 .main-section .bottom-section .profiles-container .profile {
   width: 31%;
   height: auto;
   padding: 5px;
-  margin: 5px;
+  margin: 6px;
+}
+@media (max-width: 800px) {
+  .main-section .bottom-section .profiles-container .profile {
+    width: 46%;
+  }
+}
+@media (max-width: 500px) {
+  .main-section .bottom-section .profiles-container .profile {
+    width: 100%;
+  }
 }
 .main-section .bottom-section .profiles-container .profile .img-container .profile-img {
   width: 100%;
@@ -273,9 +318,6 @@ footer .socialIcons {
 }
 .main-section .contact p {
   margin-bottom: 0;
-}
-footer {
-  text-align: center;
 }
 html,
 body {
