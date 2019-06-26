@@ -7,6 +7,133 @@
 }
 /* Below this line is where you will start your work */
 /* It is important to note, you will not be writing any CSS in this file*/
+#loading-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: block;
+  z-index: 999;
+  background-color: #fff;
+}
+#loading-text {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #999;
+  width: 100px;
+  height: 30px;
+  margin: -7px 0 0 -45px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+}
+#loading-content {
+  display: block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+  border: 3px solid #F00;
+}
+#loading-content:after {
+  content: "";
+  position: absolute;
+  border: 3px solid #0F0;
+  left: 15px;
+  right: 15px;
+  top: 15px;
+  bottom: 15px;
+}
+#loading-content:before {
+  content: "";
+  position: absolute;
+  border: 3px solid #00F;
+  left: 5px;
+  right: 5px;
+  top: 5px;
+  bottom: 5px;
+}
+#loading-content {
+  border: 3px solid transparent;
+  border-top-color: #4D658D;
+  border-bottom-color: #4D658D;
+  border-radius: 50%;
+  -webkit-animation: loader 2s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 2s linear infinite;
+}
+#loading-content:before {
+  border: 3px solid transparent;
+  border-top-color: #D4CC6A;
+  border-bottom-color: #D4CC6A;
+  border-radius: 50%;
+  -webkit-animation: loader 3s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+  animation: loader 3s linear infinite;
+}
+#loading-content:after {
+  border: 3px solid transparent;
+  border-top-color: #84417C;
+  border-bottom-color: #84417C;
+  border-radius: 50%;
+  -webkit-animation: loader 1.5s linear infinite;
+  animation: loader 1.5s linear infinite;
+  -moz-animation: loader 2s linear infinite;
+  -o-animation: loader 2s linear infinite;
+}
+@-webkit-keyframes loaders {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+#content-wrapper {
+  color: #FFF;
+  position: fixed;
+  left: 0;
+  top: 20px;
+  width: 100%;
+  height: 100%;
+}
+#header {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  height: 100px;
+  background-color: #666;
+}
+#content {
+  width: 800px;
+  height: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #888;
+}
 nav {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100vw;
@@ -29,15 +156,16 @@ nav a {
   width: 100%;
   height: 70vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .carousel {
   margin-top: 7em;
   position: relative;
 }
 .carousel #hero-text {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
-  margin-top: 13em;
+  margin-top: 10em;
   text-align: center;
   font-size: 2.3em;
   position: relative;
@@ -92,7 +220,7 @@ nav a {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 64%;
+  top: 60%;
   margin-top: -35px;
   width: 60px;
   height: 60px;
@@ -127,13 +255,13 @@ nav a {
     margin-top: 0.2em;
   }
   .carousel #carouselArrow {
-    margin-bottom: -15em;
+    margin-bottom: -19em;
     width: 30px;
   }
   .carousel .arrow {
     cursor: pointer;
     position: absolute;
-    top: 80%;
+    top: 77%;
     margin-top: -35px;
     width: 60px;
     height: 60px;
@@ -141,7 +269,7 @@ nav a {
 }
 @media (max-width: 500px) {
   .carousel #hero-text {
-    margin-top: -7.5em;
+    margin-top: -6em;
     padding: 0.3em 0 0.3em 0;
   }
   .carousel #hero-text h1 {
@@ -155,7 +283,15 @@ nav a {
     margin-top: 0.2em;
   }
   .carousel #carouselArrow {
-    margin-bottom: -45em;
+    margin-bottom: -41em;
+  }
+  .carousel .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 60%;
+    margin-top: -35px;
+    width: 60px;
+    height: 60px;
   }
 }
 .mainSection {
@@ -220,13 +356,29 @@ footer .footer-container .socialIcons {
   background-size: cover;
 }
 .hero #hero-text {
-  background-color: rgba(255, 255, 255, 0.4);
   color: black;
   text-align: center;
   font-size: 2em;
   display: block;
   padding: 1em 5em 1em 5em;
-  transform: translate(0%, 60%);
+}
+.hero #hero-text #hero-text-inner {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 11em;
+  padding: 1em;
+}
+@media (max-width: 800px) {
+  .hero #hero-text #hero-text-inner {
+    margin-top: 5em;
+  }
+}
+@media (max-width: 500px) {
+  .hero #hero-text #hero-text-inner {
+    margin-top: 4em;
+  }
+  .hero #hero-text #hero-text-inner h1 {
+    font-size: 0.9em;
+  }
 }
 .main-section {
   padding: 3em 3em 3em 3em;
@@ -313,6 +465,15 @@ footer .footer-container .socialIcons {
 .main-section .bottom-section .profiles-container .profile .img-container .profile-img {
   width: 100%;
 }
+.main-section .bottom-section .profiles-container .profile .profile-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.main-section .bottom-section .profiles-container .profile .profile-info p {
+  font-weight: 700;
+  margin-bottom: -0.2em;
+}
 .main-section .contact .about-header {
   padding-bottom: 0.5em;
 }
@@ -325,6 +486,7 @@ body {
   font-size: 62.5%;
   font-family: 'Ubuntu';
   background-color: #fffef7;
+  scroll-behavior: smooth;
 }
 .container {
   position: relative;
