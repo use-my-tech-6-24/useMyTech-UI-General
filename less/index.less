@@ -37,38 +37,38 @@ body {
 }
 
 .middle {
-  transition: .5s ease;
+  transition: .5s ease;//  original was   .5s ease
   opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, 50); //  original was   (-50%, -50%)  No changes occured
+  -ms-transform: translate(-50%, -50%);//  original was   (-50%, -50%) No changes occured
   text-align: center;
 }
 // ============  HOVER  ===========
 .one:hover {
-  opacity: 0.3;
+  opacity: .8;  // No changes occured after changing opacit (1, .2, etc.)
 }
 
 .two:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .three:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .four:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .five:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 
 .six:hover {
-  opacity: 0.3;
+  opacity: 0.8;
 }
 // ==========================
 

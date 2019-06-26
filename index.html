@@ -32,15 +32,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About<span class="sr-only"></span></a>
+                        <li class="nav-item active" >
+                            <a class="nav-link" id="nav-link1" href="about.html">About<span class="sr-only" ></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="https://ls-umts.netlify.com/">Login<span
+                            <a class="nav-link" id="nav-link2" href="https://ls-umts.netlify.com/">Login<span
                                     class="sr-only"></span></a>
                         </li>
                         <li class="nav-item active">
-                            <a class="nav-link" href="https://ls-umts.netlify.com/">Sign Up<span
+                            <a class="nav-link" id="nav-link3" href="https://ls-umts.netlify.com/">Sign Up<span
                                     class="sr-only"></span></a>
                         </li>
                     </ul>
@@ -77,17 +77,17 @@
                         </div>
                     </div>
                     <div class="slide slide3">
-                            <div class="slide-content">
-                                    <div id="hero-text">
-                                        <h1>Skip the High Rental Rates</h1>
-                                        <h2>Discover the professional equipment sharing marketplace</h2>
-                                        <button type="button">Join Now!</button>
-                                    </div>
-                                    <a href="#scrollPoint">
-                                        <img src="images/arrow-icon.png" id="carouselArrow" class="animated infinite bounce"
-                                            alt="arrow down">
-                                    </a>
-                                </div>
+                        <div class="slide-content">
+                            <div id="hero-text">
+                                <h1>Skip the High Rental Rates</h1>
+                                <h2>Discover the professional equipment sharing marketplace</h2>
+                                <button type="button">Join Now!</button>
+                            </div>
+                            <a href="#scrollPoint">
+                                <img src="images/arrow-icon.png" id="carouselArrow" class="animated infinite bounce"
+                                    alt="arrow down">
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div id="arrow-right" class="arrow"></div>
@@ -119,14 +119,14 @@
             <div class="gridContainer">
 
                 <div class="row row1" id="scrollPoint">
-                    <img src="images/cameras-grid-img.png" class="col-md-4 one ">
+                    <img src="images/cameras-grid-img.png" class="col-md-4 one">
                     <img src="images/monitors-grid-img.png" class="col-md-4 two">
-                    <img src="images/lights-grid-img.png" class="col-md-4 three ">
+                    <img src="images/lights-grid-img.png" class="col-md-4 three">
                 </div>
                 <div class="row row2">
-                    <img src="images/cdj-grid-img.png" class="col-md-4 four">
-                    <img src="images/videoCameras-grid-img.png" class="col-md-4">
-                    <img src="images/events-grid-img.png" class="col-md-4">
+                    <img src="images/cdj-grid-img.png"          class="col-md-4 four">
+                    <img src="images/videoCameras-grid-img.png" class="col-md-4 five">
+                    <img src="images/events-grid-img.png"       class="col-md-4 six">
                 </div>
 
             </div>
@@ -134,19 +134,29 @@
         </section>
 
 
-        <!-- footer section -->
-
-        <footer>
-            <h3>Connect With Us On Social Media</h3>
-            <div class="socialIcons">
-                <img src="images/fb-icon.png">
-                <img src="images/ig-icon.png">
-                <img src="images/twitter-icon.png">
-            </div>
-            <p>&copy;Use My Tech Stuff</p>
-        </footer>
-
+        
     </div>
+
+    <!-- footer section -->
+
+    <footer>
+            <div class="footer-container">
+                    <div class="contact">
+                            <h3 class="about-header">Contact Us:</h3>
+                            <p>555-555-5555</p>
+                            <a href="mailto:contact@lambdaschool.com">team@umts.com</a>
+                        </div>
+                        <div class="copyright">
+                                <p>&copy;Use My Tech Stuff</p>
+                        </div>
+                        <div class="socialIcons">
+                                <img src="images/fb-icon.png">
+                                <img src="images/ig-icon.png">
+                                <img src="images/twitter-icon.png">
+                        </div>
+            </div>
+                
+    </footer>
 
 
     <!-- Bootstrap JS -->
@@ -160,8 +170,11 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-        <script src="js/carousel.js"></script>
 
+        <script src="js/carousel.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+ 
+        
 </body>
 
 </html>
