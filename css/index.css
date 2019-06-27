@@ -168,16 +168,15 @@ nav a {
 .carousel #hero-text {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
-  margin-top: 8em;
   margin-bottom: -3em;
-  text-align: center;
   font-size: 2.3em;
-  position: relative;
+  position: absolute;
   z-index: 998;
   display: block;
   padding: 1em 0 1em 0;
   width: 100%;
   align-content: center;
+  text-align: center;
 }
 .carousel #hero-text h1 {
   font-size: 1.7em;
@@ -193,8 +192,9 @@ nav a {
   border: 2px solid #499ba8;
 }
 .carousel #carouselArrow {
-  margin-top: 17em;
-  position: relative;
+  margin-top: 19em;
+  position: absolute;
+  left: 47%;
 }
 .slide {
   background-size: cover;
@@ -262,13 +262,12 @@ nav a {
     margin-top: 0.2em;
   }
   .carousel #carouselArrow {
-    margin-bottom: -17em;
-    width: 30px;
+    left: 46.5%;
   }
   .carousel .arrow {
     cursor: pointer;
     position: absolute;
-    top: 55%;
+    top: 60%;
     width: 40px;
     height: 40px;
   }
@@ -289,7 +288,7 @@ nav a {
     margin-top: 0.2em;
   }
   .carousel #carouselArrow {
-    margin-bottom: -41em;
+    left: 45.5%;
   }
   .carousel .arrow {
     cursor: pointer;
