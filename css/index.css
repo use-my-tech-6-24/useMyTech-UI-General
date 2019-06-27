@@ -14,21 +14,20 @@
   left: 0;
   top: 0;
   display: block;
-  z-index: 999;
-  background-color: #fff;
+  z-index: 1000;
+  background: linear-gradient(to bottom, rgba(215, 136, 235, 0.98) 2%, rgba(156, 135, 234, 0.98) 16%, rgba(97, 135, 234, 0.9) 30%, rgba(21, 134, 233, 0.95) 48%, #a3eee6 100%);
 }
 #loading-text {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 50%;
-  color: #999;
-  width: 100px;
-  height: 30px;
+  color: #ffffff;
   margin: -7px 0 0 -45px;
   text-align: center;
   font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 600;
 }
 #loading-content {
   display: block;
@@ -60,8 +59,8 @@
 }
 #loading-content {
   border: 3px solid transparent;
-  border-top-color: #4D658D;
-  border-bottom-color: #4D658D;
+  border-top-color: #15CCE9;
+  border-bottom-color: #15CCE9;
   border-radius: 50%;
   -webkit-animation: loader 2s linear infinite;
   -moz-animation: loader 2s linear infinite;
@@ -70,8 +69,8 @@
 }
 #loading-content:before {
   border: 3px solid transparent;
-  border-top-color: #D4CC6A;
-  border-bottom-color: #D4CC6A;
+  border-top-color: #C015E9;
+  border-bottom-color: #C015E9;
   border-radius: 50%;
   -webkit-animation: loader 3s linear infinite;
   -moz-animation: loader 2s linear infinite;
@@ -80,8 +79,8 @@
 }
 #loading-content:after {
   border: 3px solid transparent;
-  border-top-color: #84417C;
-  border-bottom-color: #84417C;
+  border-top-color: #A3EEE6;
+  border-bottom-color: #A3EEE6;
   border-radius: 50%;
   -webkit-animation: loader 1.5s linear infinite;
   animation: loader 1.5s linear infinite;
@@ -139,6 +138,9 @@ nav {
   width: 100vw;
   font-size: 1.5em;
   display: flex;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 nav .navbar-nav {
   margin: 0 auto 0 auto;
@@ -154,41 +156,42 @@ nav a {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: 70vh;
+  height: 60em;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .carousel {
   margin-top: 7em;
   position: relative;
 }
-.carousel #hero-text {
-  background-color: rgba(0, 0, 0, 0.5);
+.carousel .hero-text {
+  background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
-  margin-top: 13em;
-  text-align: center;
-  font-size: 2.3em;
-  position: relative;
+  margin-bottom: -3em;
+  font-size: 2.5em;
+  position: absolute;
   z-index: 998;
   display: block;
   padding: 1em 0 1em 0;
   width: 100%;
   align-content: center;
+  text-align: center;
 }
-.carousel #hero-text h1 {
+.carousel .hero-text h1 {
   font-size: 1.7em;
 }
-.carousel #hero-text h2 {
-  margin-top: 1em;
+.carousel .hero-text h2 {
+  margin-top: 1.5em;
   font-weight: 200;
 }
-.carousel #hero-text button {
+.carousel .hero-text button {
   margin-top: 1em;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
   border: 2px solid #499ba8;
 }
 .carousel #carouselArrow {
-  margin-top: 8em;
+  padding-top: 40em;
 }
 .slide {
   background-size: cover;
@@ -202,8 +205,22 @@ nav a {
 .slide2 {
   background-image: url("../images/carousel-2.jpeg");
 }
+.slide2 .hero-text {
+  width: 100%;
+}
+.slide2 .hero-text h1 {
+  margin: 0 4em 0 4em;
+  font-size: 1em;
+}
 .slide3 {
   background-image: url("../images/carousel-3.jpeg");
+}
+.slide3 .hero-text {
+  width: 100%;
+}
+.slide3 .hero-text h1 {
+  margin: 0 4em 0 4em;
+  font-size: 1em;
 }
 .slide-content {
   display: flex;
@@ -219,8 +236,7 @@ nav a {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 64%;
-  margin-top: -35px;
+  top: 45%;
   width: 60px;
   height: 60px;
 }
@@ -239,50 +255,72 @@ nav a {
   z-index: 999;
 }
 @media (max-width: 800px) {
-  .carousel #hero-text {
-    margin-top: 4em;
+  .carousel .hero-text {
+    margin-top: 2em;
     padding: 0.5em 0 0.5em 0;
   }
-  .carousel #hero-text h1 {
+  .carousel .hero-text h1 {
     font-size: 1.5em;
   }
-  .carousel #hero-text h2 {
+  .carousel .hero-text h2 {
     font-size: 1em;
     margin-top: 0.5em;
   }
-  .carousel #hero-text button {
+  .carousel .hero-text button {
     margin-top: 0.2em;
   }
   .carousel #carouselArrow {
-    margin-bottom: -15em;
-    width: 30px;
+    padding-top: 40em;
   }
   .carousel .arrow {
     cursor: pointer;
     position: absolute;
-    top: 80%;
-    margin-top: -35px;
-    width: 60px;
-    height: 60px;
+    top: 63%;
+    width: 40px;
+    height: 40px;
+  }
+  .carousel .slide2 .hero-text h1 {
+    margin: 0 4em 0 4em;
+    font-size: 0.8em;
+  }
+  .carousel .slide3 {
+    background-image: url("../images/carousel-3.jpeg");
+  }
+  .carousel .slide3 .hero-text {
+    width: 100%;
+  }
+  .carousel .slide3 .hero-text h1 {
+    margin: 0 4em 0 4em;
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+  }
+  .carousel .slide3 .hero-text h2 {
+    margin: 0 5em 0 5em;
+    font-size: 0.7em;
   }
 }
 @media (max-width: 500px) {
-  .carousel #hero-text {
-    margin-top: -7.5em;
+  .carousel .hero-text {
+    margin-top: -6em;
     padding: 0.3em 0 0.3em 0;
   }
-  .carousel #hero-text h1 {
+  .carousel .hero-text h1 {
     font-size: 1.1em;
   }
-  .carousel #hero-text h2 {
+  .carousel .hero-text h2 {
     font-size: 0.9em;
     margin-top: 0.5em;
   }
-  .carousel #hero-text button {
+  .carousel .hero-text button {
     margin-top: 0.2em;
   }
-  .carousel #carouselArrow {
-    margin-bottom: -45em;
+  .carousel .arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 33%;
+    margin-top: -35px;
+    width: 50px;
+    height: 50px;
   }
 }
 .mainSection {
@@ -293,7 +331,12 @@ nav a {
 }
 .mainSection h2 {
   font-size: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+}
+.mainSection hr {
+  width: 70vw;
+  margin-bottom: 3em;
+  border: 2px solid #A7EFE8;
 }
 .mainSection p {
   margin-bottom: 3em;
@@ -346,14 +389,30 @@ footer .footer-container .socialIcons {
   height: 70vh;
   background-size: cover;
 }
-.hero #hero-text {
-  background-color: rgba(255, 255, 255, 0.4);
+.hero .hero-text {
   color: black;
   text-align: center;
   font-size: 2em;
   display: block;
   padding: 1em 5em 1em 5em;
-  transform: translate(0%, 60%);
+}
+.hero .hero-text .hero-text-inner {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 11em;
+  padding: 1em;
+}
+@media (max-width: 800px) {
+  .hero .hero-text .hero-text-inner {
+    margin-top: 5em;
+  }
+}
+@media (max-width: 500px) {
+  .hero .hero-text .hero-text-inner {
+    margin-top: 4em;
+  }
+  .hero .hero-text .hero-text-inner h1 {
+    font-size: 0.9em;
+  }
 }
 .main-section {
   padding: 3em 3em 3em 3em;
@@ -465,6 +524,7 @@ body {
   font-size: 62.5%;
   font-family: 'Ubuntu';
   background-color: #fffef7;
+  scroll-behavior: smooth;
 }
 .container {
   position: relative;
