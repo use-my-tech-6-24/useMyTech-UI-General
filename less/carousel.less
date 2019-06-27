@@ -13,7 +13,7 @@
     margin-top: 7em;
     position: relative;
     
-     #hero-text {
+     .hero-text {
          background-color: rgba(0, 0, 0, 0.6);
          color           : #fff;
          margin-bottom: -3em;
@@ -61,9 +61,27 @@
 }
 .slide2 {
   background-image: url("../images/carousel-2.jpeg");
+
+  .hero-text {
+    width: 100%;
+    
+    h1 {
+      margin: 0 4em 0 4em;
+      font-size: 1em;
+    }
+  }
 }
 .slide3 {
   background-image: url("../images/carousel-3.jpeg");
+
+  .hero-text {
+    width: 100%;
+    
+    h1 {
+      margin: 0 4em 0 4em;
+      font-size: 1em;
+    }
+  }
 }
 
 .slide-content {
@@ -107,7 +125,7 @@
 
  @media @tablet {
      .carousel {
-         #hero-text {
+         .hero-text {
              margin-top: 2em;
              padding   : 0.5em 0 0.5em 0;
 
@@ -136,13 +154,42 @@
             width: 40px;
             height: 40px;
           }
+
+          .slide2 {
+         
+            .hero-text {
+              
+              h1 {
+                margin: 0 4em 0 4em;
+                font-size: 0.8em;
+              }
+            }
+          }
+          .slide3 {
+            background-image: url("../images/carousel-3.jpeg");
+          
+            .hero-text {
+              width: 100%;
+              
+              h1 {
+                margin: 0 4em 0 4em;
+                font-size: 0.8em;
+                margin-bottom: 0.3em;
+              }
+
+              h2{
+                margin: 0 5em 0 5em;
+                font-size: 0.7em;
+              }
+            }
+          }
      }
  }
 
  @media @phone {
      .carousel {
 
-         #hero-text {
+         .hero-text {
              margin-top: -6em;
              padding   : 0.3em 0 0.3em 0;
 

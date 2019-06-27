@@ -164,7 +164,7 @@ nav a {
   margin-top: 7em;
   position: relative;
 }
-.carousel #hero-text {
+.carousel .hero-text {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   margin-bottom: -3em;
@@ -177,14 +177,14 @@ nav a {
   align-content: center;
   text-align: center;
 }
-.carousel #hero-text h1 {
+.carousel .hero-text h1 {
   font-size: 1.7em;
 }
-.carousel #hero-text h2 {
+.carousel .hero-text h2 {
   margin-top: 1.5em;
   font-weight: 200;
 }
-.carousel #hero-text button {
+.carousel .hero-text button {
   margin-top: 1em;
   background-color: rgba(0, 0, 0, 0);
   color: #fff;
@@ -205,8 +205,22 @@ nav a {
 .slide2 {
   background-image: url("../images/carousel-2.jpeg");
 }
+.slide2 .hero-text {
+  width: 100%;
+}
+.slide2 .hero-text h1 {
+  margin: 0 4em 0 4em;
+  font-size: 1em;
+}
 .slide3 {
   background-image: url("../images/carousel-3.jpeg");
+}
+.slide3 .hero-text {
+  width: 100%;
+}
+.slide3 .hero-text h1 {
+  margin: 0 4em 0 4em;
+  font-size: 1em;
 }
 .slide-content {
   display: flex;
@@ -241,18 +255,18 @@ nav a {
   z-index: 999;
 }
 @media (max-width: 800px) {
-  .carousel #hero-text {
+  .carousel .hero-text {
     margin-top: 2em;
     padding: 0.5em 0 0.5em 0;
   }
-  .carousel #hero-text h1 {
+  .carousel .hero-text h1 {
     font-size: 1.5em;
   }
-  .carousel #hero-text h2 {
+  .carousel .hero-text h2 {
     font-size: 1em;
     margin-top: 0.5em;
   }
-  .carousel #hero-text button {
+  .carousel .hero-text button {
     margin-top: 0.2em;
   }
   .carousel #carouselArrow {
@@ -265,20 +279,39 @@ nav a {
     width: 40px;
     height: 40px;
   }
+  .carousel .slide2 .hero-text h1 {
+    margin: 0 4em 0 4em;
+    font-size: 0.8em;
+  }
+  .carousel .slide3 {
+    background-image: url("../images/carousel-3.jpeg");
+  }
+  .carousel .slide3 .hero-text {
+    width: 100%;
+  }
+  .carousel .slide3 .hero-text h1 {
+    margin: 0 4em 0 4em;
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+  }
+  .carousel .slide3 .hero-text h2 {
+    margin: 0 5em 0 5em;
+    font-size: 0.7em;
+  }
 }
 @media (max-width: 500px) {
-  .carousel #hero-text {
+  .carousel .hero-text {
     margin-top: -6em;
     padding: 0.3em 0 0.3em 0;
   }
-  .carousel #hero-text h1 {
+  .carousel .hero-text h1 {
     font-size: 1.1em;
   }
-  .carousel #hero-text h2 {
+  .carousel .hero-text h2 {
     font-size: 0.9em;
     margin-top: 0.5em;
   }
-  .carousel #hero-text button {
+  .carousel .hero-text button {
     margin-top: 0.2em;
   }
   .carousel .arrow {
@@ -356,28 +389,28 @@ footer .footer-container .socialIcons {
   height: 70vh;
   background-size: cover;
 }
-.hero #hero-text {
+.hero .hero-text {
   color: black;
   text-align: center;
   font-size: 2em;
   display: block;
   padding: 1em 5em 1em 5em;
 }
-.hero #hero-text #hero-text-inner {
+.hero .hero-text .hero-text-inner {
   background-color: rgba(255, 255, 255, 0.5);
   margin-top: 11em;
   padding: 1em;
 }
 @media (max-width: 800px) {
-  .hero #hero-text #hero-text-inner {
+  .hero .hero-text .hero-text-inner {
     margin-top: 5em;
   }
 }
 @media (max-width: 500px) {
-  .hero #hero-text #hero-text-inner {
+  .hero .hero-text .hero-text-inner {
     margin-top: 4em;
   }
-  .hero #hero-text #hero-text-inner h1 {
+  .hero .hero-text .hero-text-inner h1 {
     font-size: 0.9em;
   }
 }
