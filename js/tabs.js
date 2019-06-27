@@ -14,11 +14,31 @@ class TabLink {
             return new TabProfile(profile);
         });
 
-        this.tabElement.addEventListener('click', () => this.highlightProfile());
+        this.tabElement.addEventListener('click', () => this.selectTab());
     };
 
-    highlightProfile(){
+    selectTab(){
         const tabs = document.querySelectorAll('.tab');
+
+        Array.from(tabs).forEach(tab => tab.classList.remove ('active-tab'));
+
+        const profiles = document.querySelectorAll('.profile');
+
+        profiles.forEach(profile => profile.style.display = 'none');
+
+        this.tabElement.classList.add('active-tab');
+
+        this.profiles.forEach(profile => profile.selectProfile());
+    }
+}
+
+class TabProfile {
+    constructor(profileElement){
+        this.profileElement = profileElement; 
+    }
+
+    selectProfile(){
+        this.profileElement.style.display = "flex";
     }
 }
 
