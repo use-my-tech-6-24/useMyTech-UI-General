@@ -50,7 +50,8 @@ class TabProfile {
 
     selectProfile(){
         this.profileElement.style.opacity = "1.0";
-        this.profileElement.classList.add('animated', 'pulse', 'slower')
+        this.profileElement.classList.add('animated', 'pulse', 'slower');
+        this.profileElement.scrollIntoView(false);
     }
 }
 
