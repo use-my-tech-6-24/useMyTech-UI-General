@@ -138,6 +138,9 @@ nav {
   width: 100vw;
   font-size: 1.5em;
   display: flex;
+  -webkit-box-shadow: 0 8px 6px -6px #999;
+  -moz-box-shadow: 0 8px 6px -6px #999;
+  box-shadow: 0 8px 6px -6px #999;
 }
 nav .navbar-nav {
   margin: 0 auto 0 auto;
