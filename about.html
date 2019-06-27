@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="js/tabs.js" async></script>
 
 
     <title>About UMTS</title>
@@ -68,138 +69,170 @@
                         but it can more than pay for your equipment in the long run. Set your own minimum daily prices
                         for equipment. You’ll be covered with up to $50,000 in liability insurance, and we’ll make sure
                         your gear is protected against theft and physical damage. List your equipment now, and start
-                        earning tomorrow.</p>
+                        earning.</p>
                 </div>
             </div>
             <div class="bottom-section">
                 <h1>Our Team</h1>
                 <div class="tabs">
 
-                    <div>All</div>
-                    <div>UX</div>
-                    <div>UI</div>
-                    <div>FrontEnd</div>
-                    <div>BackEnd</div>
-                    <div>Team Lead</div>
+                    <div data-tab="all" class="tab active-tab">All</div>
+                    <div data-tab="ux" class="tab">UX</div>
+                    <div data-tab="ui" class="tab">UI</div>
+                    <div data-tab="frontend" class="tab">FrontEnd</div>
+                    <div data-tab="backend" class="tab">BackEnd</div>
+                    <div data-tab="teamlead" class="tab">Team Lead</div>
 
                 </div>
                 <div class="profiles-container">
-                    <div class="profile">
+                    <div class="profile" data-tab="ux">
                         <div class="img-container">
                             <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
                         </div>
-                            <div class="profile-info">
-                                <div class="name"><p>Cesar Rodriguez</p> UX Designer</div>
-                                <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>Cesar Rodriguez</p> UX Designer
                             </div>
-                        
+                            <a href="https://github.com/CSRSR">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
+                        </div>
+
                     </div>
-                    <div class="profile">
-                            <div class="img-container">
-                                <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
-                            </div>
-                                <div class="profile-info">
-                                    <div class="name"><p>Tim Grey</p> UI Developer</div>
-                                    <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-                                </div>
-                            
+                    <div class="profile" data-tab="ui">
+                        <div class="img-container">
+                            <img src="./images/profile-photos/Tim.png" alt="Photo of Tim" class="profile-img" />
                         </div>
-                        <div class="profile">
-                                <div class="img-container">
-                                    <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
-                                </div>
-                                    <div class="profile-info">
-                                        <div class="name"><p>PJ Wise</p> UI Developer</div>
-                                        <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-                                    </div>
-                                
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>Tim Grey</p> UI Developer
                             </div>
-                    <div class="profile">
-                            <div class="img-container">
-                                <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
-                            </div>
-                                <div class="profile-info">
-                                    <div class="name"><p>Tatiana Faramarzi</p> UX Designer</div>
-                                    <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-                                </div>
-                            
+                            <a href="https://github.com/timrcoder">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
                         </div>
-                        <div class="profile">
-                                <div class="img-container">
-                                    <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
-                                </div>
-                                    <div class="profile-info">
-                                        <div class="name"><p>Ezekiel Ekunola</p> FrontEnd Architect</div>
-                                        <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-                                    </div>
-                                
+
+                    </div>
+                    <div class="profile" data-tab="ui">
+                        <div class="img-container">
+                            <img src="./images/profile-photos/Pearl.jpg" alt="Photo of PJ" class="profile-img" />
+                        </div>
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>PJ Wise</p> UI Developer
                             </div>
-                            <div class="profile">
-                                    <div class="img-container">
-                                        <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
-                                    </div>
-                                        <div class="profile-info">
-                                            <div class="name"><p>Hunter Raffety</p> FrontEnd Architect</div>
-                                            <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-                                        </div>
-                                    
-                                </div>
-                                <div class="profile">
-                                        <div class="img-container">
-                                            <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
-                                        </div>
-                                            <div class="profile-info">
-                                                <div class="name"><p>Doug Bowen</p> BackEnd Architect</div>
-                                                <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-                                            </div>
-                                        
-                                    </div>
-                                    <div class="profile">
-                                            <div class="img-container">
-                                                <img src="./images/profile-photos/Cesar.jpg" alt="Photo of Cesar" class="profile-img" />
-                                            </div>
-                                                <div class="profile-info">
-                                                    <div class="name"><p>Rory Hennessey</p> Team Lead</div>
-                                                    <img class="github-icon" src="images/github-icon.svg" href="https://github.com/CSRSR" />
-                                                </div>
-                                            
-                                        </div>
+                            <a href="https://github.com/pj-wise">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="profile" data-tab="ui">
+                        <div class="img-container">
+                            <img src="./images/profile-photos/Tatiana.png" alt="Photo of Tatiana" class="profile-img" />
+                        </div>
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>Tatiana Faramarzi</p> UI Developer
+                            </div>
+                            <a href="https://github.com/tfaramar">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="profile" data-tab="frontend">
+                        <div class="img-container">
+                            <img src="./images/profile-photos/Ezekiel.jpeg" alt="Photo of Ezekiel" class="profile-img" />
+                        </div>
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>Ezekiel Ekunola</p> FrontEnd Architect
+                            </div>
+                            <a href="https://github.com/Easybuoy">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="profile" data-tab="frontend">
+                        <div class="img-container">
+                            <img src="./images/profile-photos/Hunter.jpg" alt="Photo of Hunter" class="profile-img" />
+                        </div>
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>Hunter Raffety</p> FrontEnd Architect
+                            </div>
+                            <a href="https://github.com/hunterraffety">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="profile" data-tab="backend">
+                        <div class="img-container">
+                            <img src="./images/profile-photos/Doug.png" alt="Photo of Doug" class="profile-img" />
+                        </div>
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>Doug Bowen</p> BackEnd Architect
+                            </div>
+                            <a href="https://github.com/notdb">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="profile" data-tab="teamlead">
+                        <div class="img-container">
+                            <img src="./images/profile-photos/Rory.png" alt="Photo of Rory" class="profile-img" />
+                        </div>
+                        <div class="profile-info">
+                            <div class="name">
+                                <p>Rory Hennessey</p> Team Lead
+                            </div>
+                            <a href="https://github.com/rmhennessey">
+                                <img class="github-icon" src="images/github-icon.svg" width="45" height="45">
+                            </a>
+                        </div>
+
+                    </div>
                 </div>
 
             </div>
 
-            
+
         </div>
         <footer>
             <div class="footer-container">
-                    <div class="contact">
-                            <h3 class="about-header">Contact Us:</h3>
-                            <p>555-555-5555</p>
-                            <a href="mailto:contact@lambdaschool.com">team@umts.com</a>
-                        </div>
-                        <div class="copyright">
-                                <p>&copy;Use My Tech Stuff</p>
-                        </div>
-                        <div class="socialIcons">
-                                <img src="images/fb-icon.png">
-                                <img src="images/ig-icon.png">
-                                <img src="images/twitter-icon.png">
-                        </div>
+                <div class="contact">
+                    <h3 class="about-header">Contact Us:</h3>
+                    <p>555-555-5555</p>
+                    <a href="mailto:contact@lambdaschool.com">team@umts.com</a>
+                </div>
+                <div class="copyright">
+                    <p>&copy;Use My Tech Stuff</p>
+                </div>
+                <div class="socialIcons">
+                    <img src="images/fb-icon.png">
+                    <img src="images/ig-icon.png">
+                    <img src="images/twitter-icon.png">
+                </div>
             </div>
-                
+
         </footer>
 
-        
-    <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
 </body>
 
