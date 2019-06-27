@@ -24,7 +24,7 @@ class TabLink {
 
         const profiles = document.querySelectorAll('.profile');
 
-        profiles.forEach(profile => profile.style.border = 'none');
+        profiles.forEach(profile => profile.style.opacity = '0.5');
 
         this.tabElement.classList.add('active-tab');
 
@@ -38,11 +38,11 @@ class TabProfile {
     }
 
     selectProfile(){
-        this.profileElement.style.border = "3px solid #1586E9";
+        this.profileElement.style.opacity = "1.0";
     }
 }
 
-//Assigning tabs to variable
+//Assigns tabs to variables below
 
 const tabs = document.querySelectorAll('.tab');
 console.log(tabs);
