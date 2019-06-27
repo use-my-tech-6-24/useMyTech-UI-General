@@ -415,6 +415,10 @@ footer .footer-container .socialIcons {
   color: #C015E9;
   font-weight: bold;
 }
+.main-section .bottom-section .tabs .active-tab {
+  color: #1586E9;
+  font-weight: bold;
+}
 .main-section .bottom-section .profiles-container {
   display: flex;
   flex-flow: row wrap;
@@ -425,7 +429,7 @@ footer .footer-container .socialIcons {
   width: 31%;
   height: auto;
   padding: 5px;
-  margin: 6px;
+  margin: 7px;
 }
 @media (max-width: 800px) {
   .main-section .bottom-section .profiles-container .profile {

@@ -24,7 +24,7 @@ class TabLink {
 
         const profiles = document.querySelectorAll('.profile');
 
-        profiles.forEach(profile => profile.style.display = 'none');
+        profiles.forEach(profile => profile.style.border = 'none');
 
         this.tabElement.classList.add('active-tab');
 
@@ -38,7 +38,7 @@ class TabProfile {
     }
 
     selectProfile(){
-        this.profileElement.style.display = "flex";
+        this.profileElement.style.border = "3px solid #1586E9";
     }
 }
 
