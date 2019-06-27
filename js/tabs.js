@@ -24,7 +24,7 @@ class TabLink {
 
         const profiles = document.querySelectorAll('.profile');
 
-        profiles.forEach(profile => profile.style.opacity = '0.5');
+        profiles.forEach(profile => profile.style.opacity = '0.4');
 
         this.tabElement.classList.add('active-tab');
 
