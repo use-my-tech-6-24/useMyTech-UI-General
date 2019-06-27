@@ -35,6 +35,8 @@ class TabLink {
 
         profiles.forEach(profile => profile.style.opacity = '0.4');
 
+        profiles.forEach(profile => profile.classList.remove('animated', 'pulse', 'slower'));
+
         this.tabElement.classList.add('active-tab');
 
         this.profiles.forEach(profile => profile.highlightProfile(this.tabData));
@@ -53,14 +55,8 @@ class TabProfile {
         this.profileElement.classList.add('animated', 'pulse', 'slower');
 
         if (tabLabel !== 'all') {
-            this.profileElement.scrollIntoView(false);
+            this.profileElement.scrollIntoView({behavior: "smooth", block: "end"});
         } 
-        // this.profileElement.documentOffsetTop = function () {
-        //     return this.offsetTop + ( this.offsetParent ? this.offsetParent.documentOffsetTop() : 0 );
-        // };
-        
-        // const top = this.profileElement.documentOffsetTop() - (window.innerHeight / 2);
-        // window.scrollTo( 0, top);
     }
 }
 
