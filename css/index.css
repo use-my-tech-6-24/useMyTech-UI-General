@@ -224,8 +224,7 @@ nav a {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 55%;
-  margin-top: -35px;
+  top: 50%;
   width: 60px;
   height: 60px;
 }
@@ -268,10 +267,9 @@ nav a {
   .carousel .arrow {
     cursor: pointer;
     position: absolute;
-    top: 70%;
-    margin-top: -35px;
-    width: 60px;
-    height: 60px;
+    top: 55%;
+    width: 40px;
+    height: 40px;
   }
 }
 @media (max-width: 500px) {
