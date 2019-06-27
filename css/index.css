@@ -219,7 +219,7 @@ nav a {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 55%;
+  top: 48%;
   margin-top: -35px;
   width: 60px;
   height: 60px;
@@ -260,7 +260,7 @@ nav a {
   .carousel .arrow {
     cursor: pointer;
     position: absolute;
-    top: 77%;
+    top: 70%;
     margin-top: -35px;
     width: 60px;
     height: 60px;
