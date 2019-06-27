@@ -156,7 +156,7 @@ nav a {
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
-  height: 70em;
+  height: 60em;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -168,7 +168,7 @@ nav a {
   background-color: rgba(0, 0, 0, 0.6);
   color: #fff;
   margin-bottom: -3em;
-  font-size: 2.3em;
+  font-size: 2.5em;
   position: absolute;
   z-index: 998;
   display: block;
@@ -181,7 +181,7 @@ nav a {
   font-size: 1.7em;
 }
 .carousel #hero-text h2 {
-  margin-top: 1em;
+  margin-top: 1.5em;
   font-weight: 200;
 }
 .carousel #hero-text button {
@@ -191,7 +191,7 @@ nav a {
   border: 2px solid #499ba8;
 }
 .carousel #carouselArrow {
-  padding-top: 60em;
+  padding-top: 40em;
 }
 .slide {
   background-size: cover;
@@ -241,9 +241,6 @@ nav a {
   z-index: 999;
 }
 @media (max-width: 800px) {
-  .carousel .slide-content {
-    height: 80vh;
-  }
   .carousel #hero-text {
     margin-top: 2em;
     padding: 0.5em 0 0.5em 0;
@@ -264,7 +261,7 @@ nav a {
   .carousel .arrow {
     cursor: pointer;
     position: absolute;
-    top: 43%;
+    top: 63%;
     width: 40px;
     height: 40px;
   }
@@ -287,7 +284,7 @@ nav a {
   .carousel .arrow {
     cursor: pointer;
     position: absolute;
-    top: 25%;
+    top: 33%;
     margin-top: -35px;
     width: 50px;
     height: 50px;
